@@ -1,0 +1,25 @@
+### is how you make a commment in http file
+### Get Questions
+
+Get http://127.0.0.1:5001/api/questions
+Content-Type: application/json
+
+
+
+
+### Delete Quesiton
+
+DELETE  http://127.0.0.1:5001/api/questions/3
+Content-Type: application/json
+
+
+### Submit Quesiton
+
+POST  http://127.0.0.1:5001/api/questions
+Content-Type: application/json
+
+ {
+   "name": "will",
+   "content":"test",
+   "link":"www"
+ }
