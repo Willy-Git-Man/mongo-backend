@@ -9,7 +9,7 @@ Content-Type: application/json
 
 ### Delete Quesiton
 
-DELETE  http://127.0.0.1:5001/api/questions/3
+DELETE  http://127.0.0.1:5001/api/questions/6282c2fd6549f56e7dc362f3
 Content-Type: application/json
 
 
@@ -19,7 +19,7 @@ POST  http://127.0.0.1:5001/api/questions
 Content-Type: application/json
 
  {
-   "name": "will",
+   "name": "wilul",
    "content":"test",
    "link":"www"
  }
