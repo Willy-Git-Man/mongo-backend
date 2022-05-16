@@ -18,6 +18,16 @@ router.post('/', (req,res) => {
   .catch(err => res.status(422).json(err))
 })
 
+router.patch('/:question_id', (req,res) => {
+  const id = req.params.question_id
+  const isAnswered = req.body.isAnswered
+  Question.findOneAndUpdate(id, {isAnswered: isAnswered}, {
+    new:true
+  })
+  .then(question => res.json(question))
+  .catch(err => res.status(404).json(err))
+})
+
 router.delete('/:question_id', (req,res) => {
   const id = req.params.question_id //params a kv pair inside req
   Question.findOneAndDelete({__id: id })
